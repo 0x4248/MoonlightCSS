@@ -1,0 +1,708 @@
+/* Moonlight CSS Version 1
+ * A simple CSS framework that's quick and easy to use
+ * For more information about this framework please see
+ * https://www.github.com/lewisevans2007/moonlightcss
+ * Licence: GNU General Public License v3.0
+ * By: Lewis Evans
+*/
+
+/* Color's */
+:root {
+    --primary: #1e88e5;
+    --primary-light: #6ab7ff;
+    --primary-dark: #005cb2;
+    --secondary: #c340ff;
+    --secondary-light: #c979ff;
+    --secondary-dark: #7a2a9f;
+    --success: #3cbc40;
+    --success-light: #87ed86;
+    --success-dark: #066f1f;
+    --info: #208ee8;
+    --info-light: #74c1f4;
+    --info-dark: #025ea9;
+    --warning: #f09813;
+    --warning-light: #f9b925;
+    --warning-dark: #be6704;
+    --danger: #f13b3b;
+    --danger-light: #f67760;
+    --danger-dark: #b3000c;
+    --light: #e8e8e8;
+    --dark: #2d2d2d;
+    --light-text: #eeeeee;
+    --dark-text: #151515;
+}
+
+/* Text size */
+:root {
+    --text-xxs: 0.5rem;
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-xxl: 2rem;
+    --text-xxxl: 3rem;
+}
+
+/* Text weight */
+:root {
+    --text-weight-light: 300;
+    --text-weight-normal: 400;
+    --text-weight-bold: 700;
+}
+
+/* buttons */
+
+button {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: var(--text-md);
+    font-weight: var(--text-weight-bold);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--light-text);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--light-text);
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: var(--light-text);
+}
+
+.btn-info {
+    background-color: var(--info);
+    color: var(--light-text);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    color: var(--light-text);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: var(--light-text);
+}
+
+.btn-light {
+    background-color: var(--light);
+    color: var(--dark-text);
+}
+
+.btn-dark {
+    background-color: var(--dark);
+    color: var(--light-text);
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-secondary {
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.btn-outline-success {
+    background-color: transparent;
+    border: 1px solid var(--success);
+    color: var(--success);
+}
+
+.btn-outline-info {
+    background-color: transparent;
+    border: 1px solid var(--info);
+    color: var(--info);
+}
+
+.btn-outline-warning {
+    background-color: transparent;
+    border: 1px solid var(--warning);
+    color: var(--warning);
+}
+
+.btn-outline-danger {
+    background-color: transparent;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    border: 1px solid var(--light);
+    color: var(--light);
+}
+
+.btn-outline-dark {
+    background-color: transparent;
+    border: 1px solid var(--dark);
+    color: var(--dark);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    animation: btn-active 0.2s ease-in-out;
+}
+
+
+@keyframes btn-active {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(0.95);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.057);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Text */
+
+.text-xxs {
+    font-size: var(--text-xxs);
+}
+
+.text-xs {
+    font-size: var(--text-xs);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-md {
+    font-size: var(--text-md);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.text-xxl {
+    font-size: var(--text-xxl);
+}
+
+.text-xxxl {
+    font-size: var(--text-xxxl);
+}
+
+.text-light {
+    color: var(--light-text);
+}
+
+.text-dark {
+    color: var(--dark-text);
+}
+
+.text-bold {
+    font-weight: var(--text-weight-bold);
+}
+
+.text-normal {
+    font-weight: var(--text-weight-normal);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-info {
+    color: var(--info);
+}
+
+.text-warning {
+    color: var(--warning);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+p, span, a, li, label, input, textarea, select, button {
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+.a-primary {
+    color: var(--primary);
+}
+
+.a-secondary {
+    color: var(--secondary);
+}
+
+.a-success {
+    color: var(--success);
+}
+
+.a-info {
+    color: var(--info);
+}
+
+.a-warning {
+    color: var(--warning);
+}
+
+.a-danger {
+    color: var(--danger);
+}
+
+.a-light {
+    color: var(--light);
+}
+
+.a-dark {
+    color: var(--dark);
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+a:active {
+    animation: a-active 0.2s ease-in-out;
+}
+
+@keyframes a-active {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.11);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }   
+}
+
+code {
+    background-color: var(--light);
+    color: var(--dark-text);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.code-dark {
+    background-color: var(--dark);
+    color: var(--light-text);
+}
+
+/* Forms */
+
+textarea {
+    resize: none;
+    outline: none;
+    border: 1px solid var(--light);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: var(--text-md);
+    font-weight: var(--text-weight-normal);
+    color: var(--dark-text);
+}
+
+textarea:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.textarea-primary {
+    transition: border 0.2s ease-in-out;
+}
+
+.textarea-primary:focus {
+    border: 1px solid var(--primary);
+}
+
+.textarea-primary:hover {
+    border: 1px solid var(--primary);
+}
+
+.textarea-secondary {
+    transition: border 0.2s ease-in-out;
+}
+
+.textarea-secondary:focus {
+    border: 1px solid var(--secondary);
+}
+
+.textarea-secondary:hover {
+    border: 1px solid var(--secondary);
+}
+
+.textarea-success {
+    transition: border 0.2s ease-in-out;
+}
+
+.textarea-success:focus {
+    border: 1px solid var(--success);
+}
+
+.textarea-success:hover {
+    border: 1px solid var(--success);
+}
+
+.textarea-info {
+    transition: border 0.2s ease-in-out;
+}
+
+.textarea-info:focus {
+    border: 1px solid var(--info);
+}
+
+.textarea-info:hover {
+    border: 1px solid var(--info);
+}
+
+.textarea-warning {
+    transition: border 0.2s ease-in-out;
+}
+
+.textarea-warning:focus {
+    border: 1px solid var(--warning);
+}
+
+.textarea-warning:hover {
+    border: 1px solid var(--warning);
+}
+
+.textarea-danger {
+    transition: border 0.2s ease-in-out;
+}
+
+.textarea-danger:focus {
+    border: 1px solid var(--danger);
+}
+
+.textarea-danger:hover {
+    border: 1px solid var(--danger);
+}
+
+.textarea-light {
+    transition: border 0.2s ease-in-out;
+}
+
+.textarea-light:focus {
+    border: 1px solid var(--dark);
+}
+
+.textarea-light:hover {
+    border: 1px solid var(--dark);
+}
+
+.textarea-dark {
+    background-color: var(--dark);
+    color: var(--light-text);
+    transition: border 0.2s ease-in-out;
+}
+
+.textarea-dark:focus {
+    border: 1px solid var(--light);
+}
+
+.textarea-dark:focus {
+    border: 1px solid var(--light);
+}
+
+.textarea-dark:hover {
+    border: 1px solid var(--dark);
+}
+
+input{
+    outline: none;
+    border: 1px solid var(--light);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: var(--text-md);
+    font-weight: var(--text-weight-normal);
+    color: var(--dark-text);
+}
+
+input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input-primary {
+    transition: border 0.2s ease-in-out;
+}
+
+.input-primary:focus {
+    border: 1px solid var(--primary);
+}
+
+.input-primary:hover {
+    border: 1px solid var(--primary);
+}
+
+.input-secondary {
+    transition: border 0.2s ease-in-out;
+}
+
+.input-secondary:focus {
+    border: 1px solid var(--secondary);
+}
+
+.input-secondary:hover {
+    border: 1px solid var(--secondary);
+}
+
+.input-success {
+    transition: border 0.2s ease-in-out;
+}
+
+.input-success:focus {
+    border: 1px solid var(--success);
+}
+
+.input-success:hover {
+    border: 1px solid var(--success);
+}
+
+.input-info {
+    transition: border 0.2s ease-in-out;
+}
+
+.input-info:focus {
+    border: 1px solid var(--info);
+}
+
+.input-info:hover {
+    border: 1px solid var(--info);
+}
+
+.input-warning {
+    transition: border 0.2s ease-in-out;
+}
+
+.input-warning:focus {
+    border: 1px solid var(--warning);
+}
+
+.input-warning:hover {
+    border: 1px solid var(--warning);
+}
+
+.input-danger {
+    transition: border 0.2s ease-in-out;
+}
+
+.input-danger:focus {
+    border: 1px solid var(--danger);
+}
+
+.input-danger:hover {
+    border: 1px solid var(--danger);
+}
+
+.input-light {
+    transition: border 0.2s ease-in-out;
+}
+
+.input-light:focus {
+    border: 1px solid var(--dark);
+}
+
+.input-light:hover {
+    border: 1px solid var(--dark);
+}
+
+.input-dark {
+    background-color: var(--dark);
+    color: var(--light-text);
+    transition: border 0.2s ease-in-out;
+}
+
+.input-dark:focus {
+    border: 1px solid var(--light);
+}
+
+.input-dark:focus {
+    border: 1px solid var(--light);
+}
+
+.input-dark:hover {
+    border: 1px solid var(--dark);
+}
+
+select {
+    outline: none;
+    border: 1px solid var(--light);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: var(--text-md);
+    font-weight: var(--text-weight-normal);
+    color: var(--dark-text);
+}
+
+select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.select-primary {
+    transition: border 0.2s ease-in-out;
+}
+
+.select-primary:focus {
+    border: 1px solid var(--primary);
+}
+
+.select-primary:hover {
+    border: 1px solid var(--primary);
+}
+
+.select-secondary {
+    transition: border 0.2s ease-in-out;
+}
+
+.select-secondary:focus {
+    border: 1px solid var(--secondary);
+}
+
+.select-secondary:hover {
+    border: 1px solid var(--secondary);
+}
+
+.select-success {
+    transition: border 0.2s ease-in-out;
+}
+
+.select-success:focus {
+    border: 1px solid var(--success);
+}
+
+.select-success:hover {
+    border: 1px solid var(--success);
+}
+
+.select-info {
+    transition: border 0.2s ease-in-out;
+}
+
+.select-info:focus {
+    border: 1px solid var(--info);
+}
+
+.select-info:hover {
+    border: 1px solid var(--info);
+}
+
+.select-warning {
+    transition: border 0.2s ease-in-out;
+}
+
+.select-warning:focus {
+    border: 1px solid var(--warning);
+}
+
+.select-warning:hover {
+    border: 1px solid var(--warning);
+}
+
+.select-danger {
+    transition: border 0.2s ease-in-out;
+}
+
+.select-danger:focus {
+    border: 1px solid var(--danger);
+}
+
+.select-danger:hover {
+    border: 1px solid var(--danger);
+}
+
+.select-light {
+    transition: border 0.2s ease-in-out;
+}
+
+.select-light:focus {
+    border: 1px solid var(--dark);
+}
+
+.select-light:hover {
+    border: 1px solid var(--dark);
+}
+
+.select-dark {
+    background-color: var(--dark);
+    color: var(--light-text);
+    transition: border 0.2s ease-in-out;
+}
+
+.select-dark:focus {
+    border: 1px solid var(--light);
+}
+
+.select-dark:focus {
+    border: 1px solid var(--light);
+}
+
+.select-dark:hover {
+    border: 1px solid var(--dark);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark);
+    padding-right: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Other */
+
+.center-text{
+    text-align: center;
+}
