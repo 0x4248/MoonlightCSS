@@ -442,10 +442,6 @@ textarea:disabled {
     border: 1px solid var(--light);
 }
 
-.textarea-dark:focus {
-    border: 1px solid var(--light);
-}
-
 .textarea-dark:hover {
     border: 1px solid var(--dark);
 }
@@ -553,10 +549,6 @@ input:disabled {
     background-color: var(--dark);
     color: var(--light-text);
     transition: border 0.2s ease-in-out;
-}
-
-.input-dark:focus {
-    border: 1px solid var(--light);
 }
 
 .input-dark:focus {
@@ -676,10 +668,6 @@ select:disabled {
     border: 1px solid var(--light);
 }
 
-.select-dark:focus {
-    border: 1px solid var(--light);
-}
-
 .select-dark:hover {
     border: 1px solid var(--dark);
 }
@@ -700,6 +688,8 @@ select:disabled {
     padding-right: 0.5rem;
     border-radius: 5px;
 }
+
+/* 
 
 /* Other */
 
